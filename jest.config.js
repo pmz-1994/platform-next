@@ -1,5 +1,6 @@
 module.exports = {
-  preset: "@vue/cli-plugin-unit-jest/presets/no-babel",
+  verbose: false,
+  preset: "@vue/cli-plugin-unit-jest",
   transform: {
     "^.+\\.vue$": "vue-jest"
   }

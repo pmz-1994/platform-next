@@ -7,6 +7,7 @@
     "lint": "eslint --fix",
     "build": "vue-cli-service build --modern",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:components": "vue-cli-service test:unit ./tests/unit/components",
     "test:e2e": "start-server-and-test 'npm run dev -- --port 3030' 3030 'cypress open'"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "vue3-click-away": "^1.2.1"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "5.0.0-beta.3",
     "@vue/cli-plugin-router": "5.0.0-beta.3",
     "@vue/cli-plugin-unit-jest": "5.0.0-beta.3",
     "@vue/cli-service": "5.0.0-beta.3",
