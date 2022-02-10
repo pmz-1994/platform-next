@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  ignorePatterns: ["/dist", "/tests"],
+  ignorePatterns: ["/dist"],
   env: {
     browser: true,
     node: true
@@ -8,7 +8,8 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:vue/vue3-essential"
+    "plugin:vue/vue3-essential",
+    "plugin:jest/recommended"
   ],
   rules: {
     "prettier/prettier": [
