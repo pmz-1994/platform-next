@@ -16,7 +16,7 @@
         />
       </template>
       <template #right>
-        <div class="flex items-center">
+        <div class="project-board__header__actions">
           <SpaceSizeInfo
             v-if="
               isSubscriptionEnabled &&
