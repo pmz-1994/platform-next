@@ -3,7 +3,8 @@
     <SubscriptionStatusBanner class="project-board__banner" :space="space" />
     <ViewHeader class="project-board__header">
       <template #left>
-        <AppBreadcrumb />
+        <GoBackButton v-if="isMD" />
+        <AppBreadcrumb v-else />
       </template>
       <template #center>
         <BIMDataTabs
@@ -19,9 +20,7 @@
         <div class="project-board__header__actions">
           <SpaceSizeInfo
             v-if="
-              isSubscriptionEnabled &&
-              space.isAdmin &&
-              currentView !== 'ProjectBcf'
+              isSubscriptionEnabled && space.isAdmin && currentTab.id !== 'bcf'
             "
             :space="space"
             :spaceSubInfo="spaceSubInfo"
@@ -45,15 +44,16 @@
 import { computed, onBeforeMount, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import { useRoute } from "vue-router";
+import { useStandardBreakpoints } from "@/composables/responsive.js";
 import { useSession } from "@/composables/session.js";
 import { IS_SUBSCRIPTION_ENABLED } from "@/config/subscription.js";
 import { useProjects } from "@/state/projects.js";
 import { useSpaces } from "@/state/spaces.js";
-
 // Components
-import AppSlot from "@/components/specific/app/app-slot/AppSlot.vue";
-import ViewHeader from "@/components/specific/app/view-header/ViewHeader.vue";
 import AppBreadcrumb from "@/components/specific/app/app-breadcrumb/AppBreadcrumb.vue";
+import AppSlot from "@/components/specific/app/app-slot/AppSlot.vue";
+import GoBackButton from "@/components/specific/app/go-back-button/GoBackButton.vue";
+import ViewHeader from "@/components/specific/app/view-header/ViewHeader.vue";
 import ProjectBcf from "./project-bcf/ProjectBcf.vue";
 import ProjectFiles from "./project-files/ProjectFiles.vue";
 import ProjectOverview from "./project-overview/ProjectOverview.vue";
@@ -81,14 +81,15 @@ const tabsDef = [
 
 export default {
   components: {
-    AppSlot,
-    ViewHeader,
     AppBreadcrumb,
+    AppSlot,
+    GoBackButton,
     ProjectBcf,
     ProjectFiles,
     ProjectOverview,
     SpaceSizeInfo,
-    SubscriptionStatusBanner
+    SubscriptionStatusBanner,
+    ViewHeader
   },
   setup() {
     const route = useRoute();
@@ -133,7 +134,9 @@ export default {
       space: currentSpace,
       spaceSubInfo,
       // Methods
-      changeView
+      changeView,
+      // Responsive breakpoints
+      ...useStandardBreakpoints()
     };
   }
 };
