@@ -47,6 +47,7 @@
 <script>
 import { computed, reactive, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import { useStandardBreakpoints } from "@/composables/responsive.js";
 import columnsDef from "./columns.js";
 // Components
 import GenericTable from "@/components/generic/generic-table/GenericTable.vue";
@@ -81,9 +82,16 @@ export default {
   ],
   setup(props) {
     const { t } = useI18n();
+    const { isMD } = useStandardBreakpoints();
 
     const columns = computed(() => {
-      return columnsDef.map(col => ({
+      let filteredColumns = columnsDef;
+      if (isMD.value) {
+        filteredColumns = filteredColumns.filter(col =>
+          ["name", "status", "actions"].includes(col.id)
+        );
+      }
+      return filteredColumns.map(col => ({
         ...col,
         label: col.label || t(`ModelsTable.headers.${col.id}`)
       }));
