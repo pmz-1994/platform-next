@@ -3,7 +3,7 @@
     <SubscriptionStatusBanner class="project-board__banner" :space="space" />
     <ViewHeader class="project-board__header">
       <template #left>
-        <GoBackButton v-if="isMD" />
+        <GoBackButton v-if="isLG" />
         <AppBreadcrumb v-else />
       </template>
       <template #center>
