@@ -4,7 +4,7 @@
       {{ $t("DashboardSpaceList.title") }}
     </div>
     <component
-      :class="isCarousel ? '' : 'dashboard-space-list__content'"
+      :class="isCarousel ? '' : 'dash-board-space-list__content'"
       :is="isCarousel ? 'CarouselList' : 'div'"
     >
       <SpaceCard

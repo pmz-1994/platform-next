@@ -116,4 +116,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss" src="./Dashboard.scss"></style>
+<style scoped lang="scss" src="DashBoard.scss"></style>

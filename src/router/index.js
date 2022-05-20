@@ -29,7 +29,7 @@ import sessionGuard from "./guards/session.js";
 // Lazy loaded view components
 /* eslint-disable */
 const Dashboard = () =>
-  import(/* webpackChunkName: "dashboard" */ "@/views/dashboard/Dashboard.vue");
+  import(/* webpackChunkName: "dash-board" */ "@/views/dash-board/DashBoard.vue");
 const GroupBoard = () =>
   import(/* webpackChunkName: "group-board" */ "@/views/group-board/GroupBoard.vue");
 const ModelViewer = () =>

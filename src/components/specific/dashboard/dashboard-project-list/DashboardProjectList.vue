@@ -4,7 +4,7 @@
       {{ $t("DashboardProjectList.title") }}
     </div>
     <component
-      :class="isCarousel ? '' : 'dashboard-project-list__content'"
+      :class="isCarousel ? '' : 'dash-board-project-list__content'"
       :is="isCarousel ? 'CarouselList' : 'div'"
     >
       <ProjectCard
