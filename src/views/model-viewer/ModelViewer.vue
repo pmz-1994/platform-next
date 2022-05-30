@@ -53,8 +53,8 @@ export default {
     const pluginsConfig = cloneDeep(PLUGINS_CONFIG);
     merge(pluginsConfig, {
       bcf: {
-        topicGuid,
-      },
+        topicGuid
+      }
     });
     // Extract space specific plugins config
     // and merges it into initial config
@@ -101,7 +101,7 @@ export default {
           modelIds: modelIDs
         },
         plugins: pluginsConfig,
-        locale: locale.value,
+        locale: locale.value
       });
 
       await Promise.all(

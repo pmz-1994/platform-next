@@ -69,7 +69,7 @@ const routes = [
     component: AppLayout,
     meta: {
       // Protect this route and all its children with authentication
-      requiresAuth: false
+      requiresAuth: true
     },
     children: [
       {
