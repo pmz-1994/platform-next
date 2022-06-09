@@ -1,0 +1,1022 @@
+{
+  "Dashboard": {
+      "spacesButtonTitle": "您的空间",
+      "spacesButtonText": "查看空间",
+      "projectsButtonTitle": "您的项目",
+      "projectsButtonText": "查看项目",
+      "spacesTileTitle": "您的空间",
+      "spacesTileBottomText": "查看空间",
+      "projectsTileTitle": "您的项目",
+      "projectsTileBottomText": "查看项目",
+      "subscriptionsTileTitle": "Billing & Invoices",
+      "subscriptionsTileText": "Find all your invoices and your latest payment information here.",
+      "subscriptionsTileBottomText": "Manage subscriptions"
+  },
+  "GroupBoard": {
+      "searchInputPlaceholder": "搜索成员"
+  },
+  "OidcCallbackError": {
+      "message": "身份验证出错...",
+      "tryAgainButtonText": "再次尝试"
+  },
+  "ProjectBoard": {
+      "tabs": {
+          "overview": "项目",
+          "files": "文件",
+          "bcf": "BCF"
+      }
+  },
+  "ProjectGroups": {
+      "searchInputPlaceholder": "搜索分组"
+  },
+  "SpaceBoard": {
+      "searchInputPlaceholder": "搜索项目"
+  },
+  "UserProjects": {
+      "searchInputPlaceholder": "搜索项目"
+  },
+  "UserSpaces": {
+      "searchInputPlaceholder": "搜索空间",
+      "createButtonText": "创建空间",
+      "organizationsButtonText": "Billing accounts"
+  },
+  "ProjectFiles": {
+      "groupsButtonText": "管理分组"
+  },
+  "ProjectBcf": {
+    "importButtonText": "导入",
+    "exportButtonText": "导出",
+    "createBcfButtonText": "Create a BCF",
+    "createBcfTitle": "上报问题",
+    "showStatisticsTooltip": "展示数据",
+    "hideStatisticsTooltip": "隐藏数据",
+    "searchInputPlaceholder": "Search by index #, name, creator or tag",
+    "ascendingIndexTooltip": "ascending index",
+    "descendingIndexTooltip": "descending index",
+    "alphabeticalAscendingOrderTooltip": "按字母顺序排序",
+    "alphabeticalDescendingOrderTooltip": "按字母反序排序",
+    "ascendingDateTooltip": "ascending date",
+    "descendingDateTooltip": "descending date",
+    "viewGridTooltip": "网格视图",
+    "viewListTooltip": "列表视图"
+  },
+  "ProjectOverview": {
+      "openFileUploadButtonText": "添加模型",
+      "closeFileUploadButtonText": "关闭",
+      "forbiddenUploadNotification": {
+          "title": "Upload error",
+          "message": "Please select a model file: {extensions}"
+      }
+  },
+  "BreadcrumbSelector": {
+      "inputPlaceholder": "搜索"
+  },
+  "GenericTable": {
+      "pagination": "{start} - {end} of {total}"
+  },
+  "GoBackButton": {
+      "text": "返回"
+  },
+  "LanguageSelector": {
+      "title": "语言选择"
+  },
+  "AppHeaderMenu": {
+      "entrySettings": "账号设置",
+      "entryConnect": "系统链接",
+      "entryDocumentation": "文档",
+      "entryMarketplace": "商店",
+      "entryOldPlatform": "老版平台",
+      "entryLanguage": "语言选择",
+      "logoutButtonText": "登出",
+      "subscriptionPlatform": "平台订阅"
+  },
+  "BcfComments": {
+    "commentButton": "发布评论",
+    "commentLabel": "发布评论",
+    "commentText": "评论",
+    "cancelButton": "取消",
+    "publishButton": "发布",
+    "commentsText": "评论"
+  },
+  "BcfComment": {
+    "deleteCommentText": "是否删除这条评论？",
+    "deleteButton": "删除"
+  },
+  "BcfFilters": {
+    "filtersButton": "Filters",
+    "filtersTitle": "Filters",
+    "priorityLabel": "Priority",
+    "statusLabel": "Status",
+    "startDatePlaceholder": "Start date",
+    "startDateExample": "(Ex: 28/04/2022)",
+    "endDatePlaceholder": "End date",
+    "endDateExample": "(Ex: 28/05/2022)",
+    "assignedToLabel": "Assigned to",
+    "creatorsLabel": "Created by",
+    "tagsLabel": "Tags",
+    "resetButton": "Reset",
+    "searchButton": "Search",
+    "noPriority": "No priority",
+    "undefinedStatus": "Undefined",
+    "undefinedUser": "Undefined",
+    "undefinedCreator": "Undefined"
+  },
+  "BcfSettings": {
+    "goBackButton": "返回",
+    "title": "BCF 设置",
+    "piorityTitle": "Priority",
+    "labelTitle": "Labels",
+    "statusTitle": "Status",
+    "typeTitle": "Types",
+    "stageTitle": "Stages",
+    "validateButton": "Validate BCF settings"
+  },
+  "SettingCard": {
+    "addButton": "add an element",
+    "cancelButton": "取消",
+    "validateButton": "Validate",
+    "title": {
+      "Priority": "Priorities",
+      "Label": "Labels",
+      "Status": "Status",
+      "Type": "Types",
+      "Stage": "Stages"
+    },
+    "input": {
+      "Priority": "Add a new priority",
+      "Label": "Add a new label",
+      "Status": "Add new status",
+      "Type": "Add a new type",
+      "Stage": "Add a new stage"
+    },
+    "text": {
+      "Priority": "Priority list",
+      "Label": "Labels list",
+      "Status": "Status list",
+      "Type": "Type list",
+      "Stage": "Stage list"
+    }
+  },
+  "Extension": {
+    "deleteExtensionText": "Remove this setting",
+    "deleteButton": "删除"
+  },
+  "BcfTopicCreationCard": {
+    "text": "Create a new BCF topic",
+    "createBcfSideTitle": "Report a problem"
+  },
+  "BcfTopicGridItem": {
+    "priority": "Priority: ",
+    "assignedTo": "Assigned to: ",
+    "noPriority": "Any",
+    "notSpecified": "Not specified",
+    "elements": "Elements",
+    "noElements": "0 Element",
+    "see": "See"
+  },
+  "BcfTopicsList": {
+    "headers": {
+      "index": "#",
+      "priority": "Priority",
+      "status": "Status",
+      "title": "Title",
+      "creator": "Created by",
+      "date": "Date",
+      "actions": "Actions"
+    }
+  },
+  "BcfActionsCell": {
+    "seeButton": "See"
+  },
+  "ModalDeleteTopic": {
+    "deleteText": "You are about to delete {name}",
+    "deleteBcfButton": "Delete this BCF",
+    "keepBcfButton": "Keep this BCF"
+  },
+  "OpenTopicIssue": {
+    "elements": "Elements",
+    "noElements": "0 Element",
+    "type": "Type:",
+    "noTypeSpecified": "No type specified",
+    "description": "描述：",
+    "noDescriptionProvided": "没有提供描述",
+    "assignedTo": "Assigned to:",
+    "notAssigned": "Not assigned",
+    "dueDate": "Due date:",
+    "noDueDate": "No due date",
+    "informations": "Informations",
+    "status": "Status:",
+    "noStatusSpecified": "No status specified",
+    "stage": "Stage:",
+    "noStageProvided": "No stage provided",
+    "priority": "Priority:",
+    "priorityNotDefined": "Not defined",
+    "tags": "Tags:",
+    "noTags": "No tags"
+  },
+  "BcfTopicsMetrics": {
+    "emptyText": "Add BCF Topics to start to have some stats here.",
+    "issues": "issues",
+    "extension": {
+      "Priority": "Priority",
+      "PriorityNotDefined": "No priority",
+      "PriorityTitle": "Priorities",
+      "Status": "Status",
+      "StatusNotDefined": "No status",
+      "StatusTitle": "Status"
+    }
+  },
+  "CreateBcfTopic": {
+    "dragDropImageText": "请选择一个文件",
+    "addPictureButton": "Add a picture",
+    "titlePlaceholder": "Title *",
+    "titleErrorMessage": "Missing title",
+    "typeLabel": "Type",
+    "priorityLabel": "Priority",
+    "statusLabel": "Status",
+    "stageLabel": "Stage",
+    "assignedToLabel": "Assigned to",
+    "dueDateLabel": "Due date",
+    "dateErrorMessage": "Date format or incorrect date",
+    "dateExample": "(Ex: 28/04/2022)",
+    "descriptionLabel": "Description",
+    "tagsLabel": "Tags",
+    "validateButton": "Validate"
+  },
+  "EditBcfTopic": {
+    "goBackButton": "返回",
+    "dragDropImageText": "Please select a file",
+    "addPictureButton": "Add a picture",
+    "titlePlaceholder": "Title*",
+    "titleErrorMessage": "Missing title",
+    "typeLabel": "Type",
+    "priorityLabel": "Priority",
+    "statusLabel": "Status",
+    "stageLabel": "Stage",
+    "assignedToLabel": "Assigned to",
+    "descriptionLabel": "Description",
+    "tagsPlaceholder": "Tags",
+    "editButton": "Modify this BCF"
+  },
+  "EditBcfTopicModal": {
+    "modalText": "You are about to quit editing issue {name} but there are unsaved changes.",
+    "cancelButton": "Discard changes",
+    "continueButton": "Continue editing"
+  },
+  "BreadcrumbGroupSelector": {
+      "text": "分组"
+  },
+  "BreadcrumbProjectSelector": {
+      "placeholder": "< No project >"
+  },
+  "DashboardInfoTile": {
+      "title": "安全"
+  },
+  "DashboardProjectList": {
+      "title": "最近使用的项目"
+  },
+  "DashboardSpaceList": {
+      "title": "最近使用的空间"
+  },
+  "DashboardWelcomeTile": {
+      "title": "控制面板",
+      "message": "您好 {name}，欢迎回来！"
+  },
+  "FileActionsCell": {
+      "openViewerButtonText": "在视图中打开",
+      "createModelButtonText": "标记为模型",
+      "addTagsButtonText": "添加标签",
+      "validationRequestButtonText": "验证请求",
+      "renameButtonText": "重命名",
+      "downloadButtonText": "下载",
+      "addVersionButtonText": "添加版本",
+      "manageAccessButtonText": "管理访问权限",
+      "deleteButtonText": "取消",
+      "VisaButtonText": "验证请求"
+  },
+  "FileNameCell": {
+      "inputErrorMessage": "无效的文件名",
+      "submitButtonText": "Validate"
+  },
+  "FilesActionBar": {
+      "deleteButtonText": "删除",
+      "moveButtonText": "移动到",
+      "downloadButtonText": "下载"
+  },
+  "FilesDeleteModal": {
+      "title": "删除文件",
+      "message": "当前操作会永久地删除这个文件和文件夹：",
+      "cancelButtonText": "取消",
+      "deleteButtonText": "删除"
+  },
+  "FilesManager": {
+      "title": "项目文件",
+      "searchInputPlaceholder": "搜索"
+  },
+  "FilesManagerOnboarding": {
+      "text": "上传你的第一份文件",
+      "uploadFileButtonText": "上传文件",
+      "createFolderButtonText": "创建文件夹"
+  },
+  "FilesTable": {
+      "emptyTablePlaceholder": "空文件夹",
+      "folder": "文件夹",
+      "headers": {
+          "name": "名称",
+          "type": "文件类型",
+          "creator": "创建者",
+          "tags": "标签",
+          "lastupdate": "最近更新",
+          "size": "大小"
+      }
+  },
+  "FileUploadButton": {
+      "addFileButtonText": "上传文件"
+  },
+  "FileUploadCard": {
+      "cancelMessage": "取消",
+      "errorMessage": "上传失败"
+  },
+  "FileUploader": {
+      "uploadAreaText": "通过拖放来存储项目资产",
+      "separatorText": "或者",
+      "uploadButtonText": "选择一个模型文件"
+  },
+  "FolderAccessManager": {
+      "title": "管理访问权限",
+      "groupsButtonText": "管理分组",
+      "nameHeader": "名称",
+      "rightsHeader": "权限",
+      "membersHeader": "成员",
+      "searchInputPlaceholder": "搜索分组",
+      "groupHeader": "分组"
+  },
+  "FolderCreationButton": {
+      "buttonText": "新建文件夹"
+  },
+  "FolderCreationForm": {
+      "creationFormTitle": "创建文件夹",
+      "nameInputPlaceholder": "文件夹名",
+      "nameInputErrorMessage": "无效的文件夹名",
+      "cancelButtonText": "取消",
+      "submitButtonText": "提交"
+  },
+  "FolderSelector": {
+      "selectedFolder": "选择文件夹",
+      "submitButtonText": {
+          "moveTo": "Validate",
+          "moveHere": "Move here"
+      },
+      "emptyFolderPlaceholder": "空文件夹"
+  },
+  "GroupAccessSelector": {
+      "defaultGroupName": "All"
+  },
+  "GroupCardActionMenu": {
+      "renameButtonText": "重命名",
+      "changeColorButtonText": "修改颜色",
+      "deleteButtonText": "删除"
+  },
+  "GroupCardDeleteGuard": {
+      "title": "删除分组",
+      "message": "确定删除当前分组？",
+      "deleteButtonText": "删除"
+  },
+  "GroupCardUpdateForm": {
+      "title": "重命名分组",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "无效的分组名称",
+      "submitButtonText": "重命名"
+  },
+  "GroupCreationCard": {
+      "text": "创建一个分组",
+      "title": "新的分组",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "无效的分组名称",
+      "submitButtonText": "创建"
+  },
+  "GroupMemberSelectionCard": {
+      "text": "添加成员",
+      "title": "管理成员",
+      "selectorLabel": "分组成员",
+      "cancelButtonText": "取消",
+      "submitButtonText": "确认"
+  },
+  "InvitationCard": {
+      "pendingMessage": "已邀请 - 等待中。",
+      "resendLinkText": "再次发送邀请？",
+      "resendSuccessNotifText": "已再次发送邀请",
+      "cancelSuccessNotifText": "取消邀请"
+  },
+  "InvitationForm": {
+      "emailInputPlaceholder": "email 地址",
+      "emailInputErrorMessage": "无效的 email",
+      "roleInputLabel": "角色",
+      "roles": {
+          "admin": "管理员",
+          "user": "用户",
+          "guest": "游客"
+      },
+      "cancelButtonText": "取消",
+      "submitButtonText": "发送邀请",
+      "successNotifText": "邀请发送成功"
+  },
+  "ModelActionsCell": {
+      "addTagsButtonText": "添加标签",
+      "renameButtonText": "重命名",
+      "archiveButtonText": "存档",
+      "deleteButtonText": "删除",
+      "removeButtonText": "未标记为模型",
+      "unarchiveButtonText": "解除存档"
+  },
+  "ModelLastUpdateCell": {
+      "at": "at"
+  },
+  "ModelLocation": {
+      "emptyLocationMessage": "No location data available",
+      "addLocationButtonText": "Fill in"
+  },
+  "ModelLocationForm": {
+      "addressInputPlaceholder": "Enter address",
+      "checkButtonText": "Check",
+      "submitButtonText": "Validate",
+      "cancelButtonText": "Change"
+  },
+  "ModelNameCell": {
+      "inputErrorMessage": "Invalid model name",
+      "submitButtonText": "Validate"
+  },
+  "ModelsActionBar": {
+      "deleteButtonText": "删除",
+      "archiveButtonText": "存档",
+      "unarchiveButtonText": "解除存档",
+      "downloadButtonText": "下载",
+      "mergeButtonText": "合并"
+  },
+  "ModelsCard": {
+      "openButtonText": "打开"
+  },
+  "ModelsCardModelPreview": {
+      "emptyPreviewPlaceholder": "无法预览"
+  },
+  "ModelsDeleteModal": {
+      "title": "警告！",
+      "message": "当前操作会永久删除这些模型：",
+      "cancelButtonText": "取消",
+      "deleteButtonText": "删除"
+  },
+  "ModelsManager": {
+      "title": "项目模型",
+      "tabs": {
+        "ifc": "IFC",
+        "dwg": "DWG",
+        "upload": "上传",
+        "split": "分割 / 输出",
+        "merge": "合并",
+        "archive": "档案",
+        "metaBuildings": "元建筑"
+      }
+  },
+  "ModelsMergeModal": {
+      "title": "Merge selection",
+      "inputPlaceholder": "Name of your merge",
+      "inputErrorMessage": "You must provide a name for the file",
+      "submitButtonText": "Export"
+  },
+  "ModelsOverview": {
+      "title": "项目模型概览"
+  },
+  "ModelsOverviewOnboarding": {
+      "text": "上传你的第一个模型",
+      "uploadButtonText": "上传模型"
+  },
+  "ModelsTable": {
+      "emptyTablePlaceholder": "没有模型",
+      "headers": {
+          "id": "编号",
+          "name": "名称",
+          "version": "版本",
+          "creator": "创建人",
+          "lastupdate": "最近更新",
+          "status": "状态"
+      }
+  },
+  "ProjectCardActionMenu": {
+      "renameButtonText": "重命名",
+      "deleteButtonText": "删除",
+      "leaveButtonText": "离开"
+  },
+  "ProjectCardDeleteGuard": {
+      "title": "删除项目",
+      "message": "确定永久删除这个项目？",
+      "deleteButtonText": "删除"
+  },
+  "ProjectCardUpdateForm": {
+      "title": "重命名项目",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "无效的项目名。",
+      "renameButtonText": "重命名"
+  },
+  "ProjectCreationCard": {
+      "title": "新项目",
+      "text": "创建一个新的项目",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "你必须为这个项目提供一个名称！",
+      "createButtonText": "创建"
+  },
+  "ProjectUsersManager": {
+      "title": "项目用户",
+      "searchInputPlaceholder": "搜索用户"
+  },
+  "SpaceCard": {
+      "projects": "项目",
+      "free": "免费"
+  },
+  "SpaceCardActionMenu": {
+      "renameButtonText": "重命名",
+      "removeImageButtonText": "删除图片",
+      "deleteButtonText": "删除"
+  },
+  "SpaceCardDeleteGuard": {
+      "title": "删除空间",
+      "message": "确定删除这个空间？",
+      "deleteButtonText": "删除"
+  },
+  "SpaceCardImageButton": {
+      "buttonText": "上传图片"
+  },
+  "SpaceCardUpdateForm": {
+      "title": "重命名空间",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "无效的空间名。",
+      "submitButtonText": "重命名"
+  },
+  "SpaceCreationCard": {
+      "title": "新空间",
+      "inputPlaceholder": "名称",
+      "inputErrorMessage": "你必须为这个空间提供一个名称！",
+      "createButtonText": "创建"
+  },
+  "SpaceUsersManager": {
+      "title": "Manage space admins",
+      "tabs": {
+          "admins": "Administrators",
+          "users": "Users"
+      },
+      "searchInputPlaceholder": "Search user",
+      "addUserButtonText": "Add new admin"
+  },
+  "UserCard": {
+      "self": "you"
+  },
+  "UserCardDeleteGuard": {
+      "message": {
+          "space": "Remove {name} from this space ?",
+          "project": "Remove {name} from this project ?"
+      },
+      "submitButtonText": "Remove"
+  },
+  "UserCardUpdateForm": {
+      "submitButtonText": "Validate"
+  },
+  "UserRoleBadge": {
+      "admin": "Admin",
+      "user": "User",
+      "guest": "Guest"
+  },
+  "UsersManagerOnboarding": {
+      "text": "邀请项目的第一个协作者",
+      "inviteButtonText": "邀请"
+  },
+  "PageNotFound": {
+      "title": "找不到页面",
+      "text": {
+          "line1": "Woopsie! The page that you are looking for does not exist.",
+          "line2": "Please return home."
+      },
+      "homeButtonText": "Home"
+  },
+  "FolderPermissionSelector": {
+      "label": "All",
+      "options": {
+          "accessDenied": "Access denied",
+          "readOnly": "Read only",
+          "readWrite": "Read / Write"
+      }
+  },
+  "GroupMembersSelector": {
+      "title": "管理分组成员",
+      "searchInputPlaceholder": "搜索"
+  },
+  "GroupPermissionSelector": {
+      "options": {
+          "accessDenied": "Access denied",
+          "readOnly": "Read only",
+          "readWrite": "Read / Write"
+      }
+  },
+  "Error": "错误",
+  "Success": "成功",
+  "Errors": {
+      "spacesFetchError": "Fail to fetch spaces",
+      "spaceCreateError": "Fail to create space",
+      "spaceUpdateError": "Fail to update space",
+      "spaceDeleteError": "Fail to delete space",
+      "spaceImageUpdateError": "Fail to update space image",
+      "spaceImageDeleteError": "Fail to delete space image",
+      "projectsFetchError": "Fail to fetch projects",
+      "projectCreateError": "Fail to create project",
+      "projectUpdateError": "Fail to update project",
+      "projectDeleteError": "Fail to delete project",
+      "invitationsFetchError": "Fail to fetch invitations",
+      "invitationSendError": "Fail to send invitation",
+      "invitationResendError": "Fail to resend invitation",
+      "invitationCancelError": "Fail to cancel invitation",
+      "usersFetchError": "Fail to fetch users",
+      "userUpdateError": "Fail to update user",
+      "userDeleteError": "Fail to delete user",
+      "modelsFetchError": "Fail to fetch models",
+      "modelUploadError": "Fail to upload model",
+      "modelCreateError": "Fail to create model",
+      "modelUpdateError": "Fail to update model",
+      "modelDownloadError": "Fail to download model",
+      "modelMergeError": "Fail to merge models",
+      "modelDeleteError": "Fail to delete model",
+      "fileStructureFetchError": "Fail to fetch file structure",
+      "fileUpdateError": "Fail to update files",
+      "fileDownloadError": "Fail to download files",
+      "fileDeleteError": "Fail to delete files",
+      "folderCreateError": "Fail to create folder",
+      "documentUploadError": "Fail to upload document",
+      "groupsFetchError": "Fail to fetch groups",
+      "groupCreateError": "Fail to create group",
+      "groupUpdateError": "Fail to update group",
+      "groupDeleteError": "Fail to delete group",
+      "organizationsFetchError": "Fail to fetch billing accounts",
+      "organizationCreateError": "Fail to create billing accounts",
+      "organizationUpdateError": "Fail to update billing accounts",
+      "organizationDeleteError": "Fail to delete billing accounts",
+      "userLeaveError": "You can't leave the project as you are the last administrator",
+      "subscriptionsFetchError": "Fail to fetch subscriptions",
+      "platformSubscribeError": "Fail to initialize platform subscription",
+      "datapackSubscribeError": "Fail to create datapack subscription",
+      "datapackUpdateError": "Fail to update datapack subscription",
+      "projectFetchFileError": "Impossible to retrieve this document",
+      "visaCreateError": "Error during visa creation",
+      "visaCreateValidationError": "Error when adding a validator",
+      "visaFetchError": "Impossible to retrieve the document approval",
+      "visaAcceptError": "Error in sending your response",
+      "visaDenyError": "Error in sending your response",
+      "visaCloseError": "Error in closing the document approval",
+      "visaResumeError": "Error in reopening the document approval",
+      "visaFetchCreatedError": "Impossible to recover the document approvals",
+      "visaFetchValidatorError": "Impossible to recover the document approvals",
+      "visaDeleteValidationError": "Impossible to remove this validator",
+      "visaDeleteError": "Impossible to close this document approval",
+      "visaUpdateError": "Impossible to update this document approval",
+      "visaRefreshError": "Impossipble to update your response",
+      "visaFetchAllCommentsError": "Impossible to retrieve the comments",
+      "visaCreateCommentsError": "Impossible to post this comment",
+      "visaUpdateCommentError": "Impossible to edit this comment",
+      "visaDeleteCommentError": "Impossible to remove this comment"
+  },
+  "ProjectStatusBadge": {
+      "new": "新建",
+      "active": "活跃",
+      "inactive": "不活跃",
+      "paused": "暂停"
+  },
+  "Payment": {
+      "titlePlatform": "Upgrade to pro platform",
+      "titleDatapack": "Add DataPack"
+  },
+  "Subscribe": {
+      "title": "Choose your plan",
+      "text": "You are only allowed a single free space among your billing accounts. If this space already exists, upgrade to the professional subscription for additional features."
+  },
+  "SubscriptionDatapack": {
+      "title": "Manage DataPack",
+      "successNotification": "You now have {size} of storage in space {spaceName}"
+  },
+  "SubscriptionFree": {
+      "title": "Create Free Plan",
+      "text": "You are about to create your free space. Your free space includes: {size}, 6 users.",
+      "spaceCreatedNotification": "You have just created the space {spaceName} with billing account {organizationName}"
+  },
+  "SubscriptionPro": {
+      "subscribeTitle": "Subscribe to Professional Plan",
+      "upgradeTitle": "Upgrade to pro platform",
+      "text": "You are about to subscribe to your pro plan. This includes: {size} of storage, unlimited projects with unlimited users.",
+      "spaceCreatedNotification": "You have just created the space {spaceName} with billing account {organizationName}",
+      "spaceUpgradedNotification": "Congratulation ! You just upgraded your space {spaceName} to pro plan."
+  },
+  "UserSubscriptions": {
+      "title": "Platform subscription",
+      "text": "Browse through your billing accounts to manage subscriptions and invoices for your platform spaces.",
+      "list": "My billing accounts:"
+  },
+  "BillingActionsCell": {
+      "updateButtonText": "Modify the payment card",
+      "datapackButtonText": "Manage datapacks",
+      "cancelButtonText": "Cancel this subscription"
+  },
+  "BillingsTable": {
+      "title": "Billing details",
+      "nextPayment": "on",
+      "professionalPlan": "Professionnal",
+      "withDatapack": "with Datapack",
+      "cancelSubscriptionButton": "Cancel subscription",
+      "updateCreditCardButton": "Update credit card",
+      "emptyTableText": "Oh no. There is no active plan here. You have probably never tried our Pro version before..",
+      "subscribeButton": "Upgrade to our Pro Platform",
+      "headers": {
+          "space": "Space",
+          "nextpayment": "Next payment",
+          "subscriptionplan": "Subscription plan",
+          "status": "Status",
+          "amount": "Amount"
+      },
+      "status": {
+          "active": "Active",
+          "deleted": "Deleted",
+          "paused": "Paused",
+          "custom": "Managed by BIMData.io"
+      }
+  },
+  "DatapackForm": {
+      "baseNote": "Storage",
+      "baseText": "Included with pro plan",
+      "datapackNote": "Additional storage",
+      "priceUnit": " / GB / month Tax incl.",
+      "totalUnit": " / month Tax incl.",
+      "actualStorage": "Actual storage",
+      "newStorage": "New Storage",
+      "submitButtonText": "Validate",
+      "cancelButtonText": "Cancel"
+  },
+  "DatapackInfo": {
+      "title": "Actual subscription",
+      "datapacks": "Active DataPacks",
+      "storage": "Active storage",
+      "including": "including {quantity} GB of DataPack"
+  },
+  "FreePlanCard": {
+      "title": "FREE",
+      "price": "0€",
+      "bullet2": "1 Free space",
+      "bullet3": "6 Users",
+      "buttonText": "Create a free space",
+      "note": "Forever"
+  },
+  "GroupMemberInvitation": {
+      "name": "Pending invitation"
+  },
+  "InvoiceActionsCell": {
+      "downloadButton": "Download invoice"
+  },
+  "InvoicesTable": {
+      "title": "Invoices",
+      "tablePlaceholder": "Loading invoices...",
+      "emptyTableText": "Your invoices will be listed here when you have active subsctiptions.",
+      "subscribeButton": "Upgrade to our Pro Platform",
+      "headers": {
+          "amount": "Amount",
+          "status": "Status",
+          "space": "Space",
+          "date": "Date"
+      }
+  },
+  "InvoiceStatusCell": {
+      "completed": "Completed",
+      "pending": "Pending"
+  },
+  "OrganizationCard": {
+      "spaces": "{number} spaces"
+  },
+  "OrganizationDeleteGuard": {
+      "title": "Delete billing account",
+      "submitButtonText": "Delete"
+  },
+  "OrganizationForm": {
+      "createTitle": "Create a billing account",
+      "updateTitle": "Update billing account",
+      "infoSectionTitle": "Basic information",
+      "nameInputPlaceholder": "名称",
+      "nameInputErrorMessage": "Invalid name",
+      "logoInputLabel": "Upload logo",
+      "logoInputMessage": "Logo should be in JP(E)G/PNG format. The file size cannot exceed 1 MB.",
+      "submitButtonText": "Validate",
+      "successTitle": "Congratulation your billing account has just been created",
+      "successButtonText": "OK"
+  },
+  "OrganizationsList": {
+      "explanationText": "A billing account is the entity that gather your billing at BIMData.io",
+      "createButtonText": "Add new billing account",
+      "searchInputPlaceholder": "Search an account"
+  },
+  "OrganizationsManager": {
+      "title": "Manage billing accounts",
+      "backButtonText": "Back"
+  },
+  "OrganizationSpaceCard": {
+      "projects": "{number} projects"
+  },
+  "OrganizationSpacesImport": {
+      "spaceListTitle": "Select spaces to import",
+      "spaceListPlaceholder": "No space to import...",
+      "submitButtonText": "Import spaces",
+      "successTitle": "Spaces successfully imported",
+      "successButtonText": "OK"
+  },
+  "OrganizationSpacesList": {
+      "importButtonText": "Import space",
+      "addButtonText": "Add new space",
+      "searchInputPlaceholder": "Search",
+      "spaceListTitle": "Account spaces",
+      "spaceListPlaceholder": "No space is attached to this billing account."
+  },
+  "ProjectCardLeaveGuard": {
+      "title": "离开项目",
+      "message": "确定离开这个项目？",
+      "leaveButtonText": "确定"
+  },
+  "ProPlanCard": {
+      "title": "PROFESSIONAL",
+      "priceUnit": "/ Space / month",
+      "bullet2": "Unlimited projects",
+      "bullet3": "Unlimited users",
+      "buttonText": "Choose professional",
+      "note": "expand 1GB for {price} / month"
+  },
+  "ProPlanForm": {
+      "title": "Price",
+      "priceUnit": "/ month",
+      "successTitle": "Congratulation ! You just subscribed to the Pro Platform.",
+      "successMessage": "Your payment has been completed. You can now enjoy your professional subscription.",
+      "successButtonText": "Home",
+      "titleNet": "Price ex-tax",
+      "titleTax": "Taxes",
+      "titleTotal": "Price",
+      "noteTotal": "Tax incl."
+  },
+  "ProPlanInfo": {
+      "title": "Your subscription",
+      "subTitle": "Professionnal plan",
+      "priceUnit": "/ month (ex-tax)",
+      "bulletsHead": "The subscription includes",
+      "bullet1": "{size} of storage",
+      "bullet2": "BIMData Platform",
+      "bullet3": "3D Viewer",
+      "bullet4": "2D Viewer",
+      "bullet5": "Unlimited projects",
+      "bullet6": "Unlimited users",
+      "bullet7": "Unlimited comments (BCF)",
+      "bullet8": "IFC Merge / Split",
+      "bullet9": "IFC Edition",
+      "bullet10": "Support"
+  },
+  "SpaceSelected": {
+      "selectedOrga": "Billing account:",
+      "selectedSpace": "Selected space:"
+  },
+  "SpaceSizeInfo": {
+      "used": "used",
+      "from": "out of",
+      "included": "included",
+      "subscribeDatapackButton": "Upgrade storage",
+      "subscribePlatformButton": "Upgrade to pro subscription",
+      "usage": "{used} used out of {total}"
+  },
+  "SpaceSizePreview": {
+      "title": "Storage",
+      "actualStorage": "Actual storage",
+      "newStorage": "New storage",
+      "newStorageText": "By purchasing the professional subscription you benefit from {size} of storage. You can purchase additional storage directly from your space."
+  },
+  "SubscribeCard": {
+      "title": "Create your new space",
+      "text": "Would you like to take full advantage of the platform? Make use of {size} for your projects and of unlimited users by upgrading to a professional subscription.",
+      "button": "Create a new space"
+  },
+  "FreePlanInfo": {
+      "title": "FREE",
+      "price": "0€",
+      "bullet2": "1 Free space",
+      "bullet3": "6 Users",
+      "buttonText": "Create a free space",
+      "note": "Forever"
+  },
+  "FreePlanRedirect": {
+      "title": "Access Free space",
+      "text": "You have already created your free space.",
+      "buttonText": "Go to my free space"
+  },
+  "SubscriptionStatusBanner": {
+      "activate": "This free space has reached its limits, proceed to a professional subscription to unblock the full functionality of BIMData.",
+      "reactivate": "This space is currently not connected to any subscription. To unblock all the functionalities of BIMData, upgrade to a professional subscription."
+  },
+  "OrganizationSelector": {
+      "title": "Billing account",
+      "radioLabelSelect": "Select a billing account",
+      "radioLabelCreate": "Create a billing account",
+      "inputPlaceholder": "Name of the account",
+      "submitButtonText": "Validate",
+      "successMessage": "Congratulation your billing account has just been created"
+  },
+  "SpaceCreator": {
+      "title": "创建空间",
+      "text": "Your space groups your different BIM projects.",
+      "inputPlaceholder": "Space name",
+      "billingAccountLabel": "Billing account :",
+      "billingAccountButton": "Change",
+      "submitButtonText": "Continue to payment"
+  },
+  "Visa": {
+      "button": "审批",
+      "noVisa": "尚未创建任何审批",
+      "add": {
+          "title": "验证请求",
+          "validator": "验证",
+          "toValidate": "待验证",
+          "errorDate": "错误的日期",
+          "exempleDate": "(例如： 31/05/2022)",
+          "description": "描述",
+          "cancel": "取消",
+          "validate": "Validate",
+          "validatorView": {
+              "getBack": "返回",
+              "validator": "Validate",
+              "accept": "接受"
+          }
+      },
+      "safeZone": {
+          "add": {
+              "content": "确定离开当前页面？可能存在未验证的信息",
+              "action": "确定，离开当前页面",
+              "keepView": "取消，继续留在当前页面"
+          },
+          "delete": {
+              "content": "确定删除当前文件审批？",
+              "action": "确定，删除当前文件审批",
+              "keepView": "取消"
+          },
+          "close": {
+              "content": "确定关闭当前的文件审批？",
+              "action": "确定，关闭文件审批",
+              "keepView": "取消"
+          },
+          "deleteComment": {
+              "content": "确定删除这条评论？",
+              "action": "确定，删除评论",
+              "keepView": "取消"
+          }
+      },
+      "summary": {
+          "title": {
+              "open": "Request in process",
+              "closed": "Request closed"
+          },
+          "appliedBy": "Request validation by",
+          "validate": "Validate",
+          "deny": "Refuse",
+          "delete": "Remove",
+          "close": "Close",
+          "comment": "Comment",
+          "term": "Due date",
+          "validator": "Verifiers",
+          "deletedUser": "User removed",
+          "validatorList": {
+              "accept": "Validated",
+              "deny": "Refused",
+              "commented": "Commented",
+              "pending": "Awaiting",
+              "getRidOfValidator": "Remove validator",
+              "refresh": "Reinitialise verification"
+          }
+      },
+      "comments": {
+          "comment": "Comment",
+          "commentary": "Commentry",
+          "postComment": "Post a comment",
+          "replyComment": "Respond to a comment",
+          "publish": "Publish",
+          "cancel": "Cancel",
+          "reply": "Respond",
+          "actions": {
+              "edit": "Edit",
+              "delete": "Remove",
+              "confirmDelete": "Remove this comment?"
+          }
+      },
+      "list": {
+          "title": "Request in progress",
+          "toValidateVisas": "My validations",
+          "createdVisas": "My requests",
+          "emptyValidation": "No validation in progress",
+          "emptyDemand": "No request in progress"
+      },
+      "selectionValidator": {
+          "warning": "This user cannot access the file."
+      }
+  }
+}

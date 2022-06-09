@@ -1,7 +1,7 @@
 <template>
   <div class="app-header">
     <AppLink :to="{ name: routeNames.dashboard }">
-      <PlatformLogo class="app-header__logo" />
+      <img src="/static/logo-nanchong.svg" class="app-header__logo" />
     </AppLink>
     <app-slot name="app-header-action" />
     <AppHeaderMenu class="app-header__menu" />
