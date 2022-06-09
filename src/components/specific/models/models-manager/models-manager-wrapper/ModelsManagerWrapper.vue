@@ -43,7 +43,6 @@
       @archive="archiveModels([$event])"
       @delete="openDeleteModal([$event])"
       @download="downloadModels([$event])"
-      @remove-model="removeModel($event)"
       @selection-changed="setSelection"
       @unarchive="unarchiveModels([$event])"
     />
@@ -60,7 +59,7 @@
 </template>
 
 <script>
-import { ref, watchEffect } from "vue";
+import { ref, watch, watchEffect } from "vue";
 import { useModels } from "@/state/models.js";
 // Components
 import ModelsActionBar from "../models-action-bar/ModelsActionBar.vue";
@@ -78,10 +77,6 @@ export default {
       type: Object,
       required: true
     },
-    models: {
-      type: Array,
-      required: true
-    },
     tabs: {
       type: Array,
       required: true,
@@ -89,14 +84,20 @@ export default {
     }
   },
   setup(props) {
-    const {
-      deleteModels,
-      downloadModels: download,
-      updateModels
-    } = useModels();
+    const { downloadModels: download, updateModels } = useModels();
 
-    const currentTab = ref(props.tabs[0]);
+    const currentTab = ref({});
     const selectTab = tab => (currentTab.value = tab);
+
+    watch(
+      () => props.tabs,
+      () => {
+        currentTab.value =
+          props.tabs.find(tab => tab.id === currentTab.value?.id) ||
+          props.tabs[0];
+      },
+      { immediate: true }
+    );
 
     const displayedModels = ref([]);
     watchEffect(() => {
@@ -120,10 +121,6 @@ export default {
         props.project,
         models.map(model => ({ ...model, archived: false }))
       );
-    };
-
-    const removeModel = async model => {
-      await deleteModels(props.project, [model]);
     };
 
     const modelsToDelete = ref([]);
@@ -153,7 +150,6 @@ export default {
       downloadModels,
       closeDeleteModal,
       openDeleteModal,
-      removeModel,
       selectTab,
       setSelection,
       unarchiveModels

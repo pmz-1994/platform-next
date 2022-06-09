@@ -5,6 +5,8 @@ import en from "./lang/en.json";
 import es from "./lang/es.json";
 import fr from "./lang/fr.json";
 import it from "./lang/it.json";
+import nl from "./lang/nl.json";
+import no from "./lang/no.json";
 import zh from "./lang/zh.json";
 
 const i18n = createI18n({

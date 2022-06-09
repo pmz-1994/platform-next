@@ -12,6 +12,7 @@ const AVAILABLE_PLUGINS = Object.freeze({
 
 const WINDOWS = Object.freeze({
   DWG: "dwg",
+  DXF: "dxf",
   PLAN: "plan",
   V2D: "2d",
   V3D: "3d"
