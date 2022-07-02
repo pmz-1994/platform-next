@@ -8,6 +8,9 @@
       "spacesTileBottomText": "查看空间",
       "projectsTileTitle": "您的项目",
       "projectsTileBottomText": "查看项目",
+      "forwardTileTitle": "查看全景",
+      "forwardTileText": "查看全景视图",
+      "forwardTileBottomText": "点击进入",
       "subscriptionsTileTitle": "Billing & Invoices",
       "subscriptionsTileText": "Find all your invoices and your latest payment information here.",
       "subscriptionsTileBottomText": "Manage subscriptions"

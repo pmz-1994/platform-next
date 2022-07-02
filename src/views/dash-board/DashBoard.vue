@@ -35,6 +35,17 @@
           </template>
         </DashboardButtonTile>
       </AppLink>
+      <DashboardButtonTile data-test="btn-subscriptions" @click="handleForward">
+        <template #title>
+          {{ $t("Dashboard.forwardTileTitle") }}
+        </template>
+        <template #content>
+          {{ $t("Dashboard.forwardTileText") }}
+        </template>
+        <template #bottom-text>
+          {{ $t("Dashboard.forwardTileBottomText") }}
+        </template>
+      </DashboardButtonTile>
       <AppLink
         v-if="isSubscriptionEnabled"
         :to="{ name: routeNames.userSubscriptions }"
@@ -100,6 +111,14 @@ export default {
     DashboardSpaceList,
     DashboardWelcomeTile,
     SubscribeCard
+  },
+  methods: {
+    handleForward() {
+      setTimeout(() => {
+        window.location.href =
+          "http://www.tuchengbim.top/Apps/MyCesiumDemo/index.html";
+      }, 800);
+    }
   },
   setup() {
     const { userSpaces } = useSpaces();

@@ -4,7 +4,7 @@ const routeNames = Object.freeze({
   oidcCallback: "oidc-callback",
   oidcCallbackError: "oidc-callback-error",
   pageNotFound: "page-not-found",
-  dashboard: "dashboard",
+  dashboard: "dash-board",
   userSpaces: "user-spaces",
   userProjects: "user-projects",
   spaceBoard: "space-board",
