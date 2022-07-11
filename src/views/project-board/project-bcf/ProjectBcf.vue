@@ -263,7 +263,7 @@
             <BcfStatistics
               :bcfTopics="displayedBcfTopics"
               extensionType="Status"
-              :availableExtensions="detailedExtensions.topicStatuses"
+              :availableExtensions="detailedExtensions.topic_statuses"
             />
             <BcfStatistics
               :bcfTopics="displayedBcfTopics"
@@ -387,6 +387,7 @@ export default {
 
     const loading = ref(false);
     const isListView = ref(false);
+    const currentBcfTopic = ref(null);
 
     watch(
       currentProject,
@@ -397,6 +398,18 @@ export default {
           reloadExtensions();
         } finally {
           loading.value = false;
+        }
+      },
+      { immediate: true }
+    );
+
+    watch(
+      bcfTopics,
+      topics => {
+        if (currentBcfTopic.value) {
+          currentBcfTopic.value = topics.find(
+            t => t.guid === currentBcfTopic.value.guid
+          );
         }
       },
       { immediate: true }
@@ -441,7 +454,6 @@ export default {
     };
 
     const { openSidePanel, closeSidePanel } = useAppSidePanel();
-    const currentBcfTopic = ref(null);
     const showBcfTopicCreate = ref(false);
     const showBcfTopicOverview = ref(false);
     const showBcfTopicForm = ref(false);
@@ -483,7 +495,7 @@ export default {
               model.status === MODEL_STATUS.COMPLETED
           )
           .sort((a, b) =>
-            a.createdAt.getTime() > b.createdAt.getTime() ? 1 : -1
+            a.created_at.getTime() > b.created_at.getTime() ? 1 : -1
           );
         if (ifcs.length > 0) {
           modelIDs.push(ifcs[0].id);
