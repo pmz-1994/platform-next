@@ -78,9 +78,9 @@ export default {
       .filter(Boolean); // keep only existing plugins
 
     // Extract space specific plugins urls from marketplace
-    const appPlugins = currentSpace.value.marketplaceApps
-      .filter(app => app.viewerPluginsUrls && app.viewerPluginsUrls.length)
-      .map(app => app.viewerPluginsUrls)
+    const appPlugins = currentSpace.value.marketplace_apps
+      .filter(app => app.viewer_plugins_urls && app.viewer_plugins_urls.length)
+      .map(app => app.viewer_plugins_urls)
       .reduce((set, urls) => {
         urls.forEach(url => set.add(url));
         return set;

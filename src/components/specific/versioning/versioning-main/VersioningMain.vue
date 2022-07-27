@@ -35,16 +35,20 @@
       <div class="versioning-main__content__add-version">
         <FileUploadButton
           :disabled="
-            (!project.isAdmin && currentFolder.userPermission < 100) ||
-            spaceSubInfo.remainingTotalSize <= 0
+            (!project.isAdmin && currentFolder.user_permission < 100) ||
+            spaceSubInfo.remaining_total_size <= 0
           "
           width="100%"
-          icon="close"
-          iconSize="xxxs"
-          :iconRotate="45"
-          :textButton="$t('Versioning.AddVersion')"
           @upload="addVersion"
-        />
+        >
+          <BIMDataIcon
+            name="close"
+            size="xxxs"
+            :rotate="45"
+            margin="0 6px 0 0"
+          />
+          {{ $t("Versioning.AddVersion") }}
+        </FileUploadButton>
       </div>
       <template v-if="hasPrevVersions === false">
         <div class="versioning-main__content__empty-area">
@@ -75,17 +79,19 @@
 
 <script>
 import { ref, onMounted, computed } from "vue";
-
-import { toCamelCaseFields } from "@/utils/misc";
 import { useUpload } from "@/composables/upload.js";
 import FileService from "@/services/FileService.js";
-
-import VersioningDoc from "@/components/specific/versioning/versioning-doc/VersioningDoc.vue";
+// Components
 import FileUploadButton from "@/components/specific/files/file-upload-button/FileUploadButton.vue";
+import VersioningDoc from "@/components/specific/versioning/versioning-doc/VersioningDoc.vue";
 import VersioningSafeZone from "@/components/specific/versioning/versioning-safe-zone/VersioningSafeZone.vue";
 
 export default {
-  components: { VersioningDoc, VersioningSafeZone, FileUploadButton },
+  components: {
+    FileUploadButton,
+    VersioningDoc,
+    VersioningSafeZone
+  },
   props: {
     project: {
       type: Object,
@@ -116,7 +122,7 @@ export default {
         const handlers = {
           onUploadStart: () => (loading.value = true),
           onUploadComplete: async ({ response: newHeadVersion }) => {
-            await getAllDocVersions(toCamelCaseFields(newHeadVersion));
+            await getAllDocVersions(newHeadVersion);
             loading.value = false;
           }
         };

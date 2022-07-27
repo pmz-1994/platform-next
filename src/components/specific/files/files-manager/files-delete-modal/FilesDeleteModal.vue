@@ -50,11 +50,11 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true
+      required: true,
     },
     files: {
       type: Array,
-      required: true
+      required: true,
     }
   },
   emits: ["close"],
@@ -62,7 +62,7 @@ export default {
     const { deleteFiles, softUpdateFileStructure } = useFiles();
 
     const hasVersions = computed(() =>
-      props.files.some(file => file.history.length > 1)
+      props.files.some(file => file.history?.length > 1)
     );
 
     const submit = () => {

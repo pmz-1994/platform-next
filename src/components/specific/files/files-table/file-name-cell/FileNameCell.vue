@@ -44,7 +44,7 @@
         <BIMDataIcon
           v-if="isFolder(file)"
           :name="
-            !project.isAdmin && file.userPermission < 100
+            !project.isAdmin && file.user_permission < 100
               ? 'readonlyFolder'
               : 'folder'
           "
@@ -52,7 +52,7 @@
           fill
           color="primary"
         />
-        <BIMDataFileIcon v-else :fileName="file.fileName" :size="20" />
+        <BIMDataFileIcon v-else :fileName="file.file_name" :size="20" />
         <BIMDataTextbox :text="file.name" width="auto" maxWidth="70%" />
         <BIMDataIcon
           v-if="hasHistory"
@@ -69,8 +69,9 @@
 
 <script>
 import { ref, watch, computed } from "vue";
-import { useFiles } from "@/state/files.js";
-import { isFolder } from "@/utils/file-structure.js";
+import { useFiles } from "../../../../../state/files.js";
+import { debounce } from "../../../../../utils/async.js";
+import { isFolder } from "../../../../../utils/file-structure.js";
 
 export default {
   props: {
@@ -99,7 +100,7 @@ export default {
 
     const hasHistory = computed(() => props.file.history?.length > 1);
 
-    const renameFile = async () => {
+    const renameFile = debounce(async () => {
       if (fileName.value) {
         try {
           loading.value = true;
@@ -118,7 +119,7 @@ export default {
         hasError.value = true;
         nameInput.value.focus();
       }
-    };
+    }, 500);
 
     const showUpdateForm = ref(false);
     const openUpdateForm = () => {
