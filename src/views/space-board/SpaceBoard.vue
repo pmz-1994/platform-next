@@ -1,8 +1,9 @@
 <template>
-  <div data-test="space-board" class="view space-board">
+  <div data-test-id="view-space-board" class="view space-board">
     <AppLoading name="spaces-subscriptions" :loader="false">
       <SubscriptionStatusBanner class="space-board__banner" :space="space" />
     </AppLoading>
+
     <ViewHeader class="space-board__header">
       <template #left>
         <GoBackButton v-if="isMD" />
@@ -10,7 +11,6 @@
       </template>
       <template #center>
         <BIMDataSearch
-          data-test="input-search"
           class="space-board__header__search"
           :width="isLG ? '150px' : isXL ? '225px' : '300px'"
           :placeholder="isSM ? '' : $t('SpaceBoard.searchInputPlaceholder')"
@@ -27,7 +27,6 @@
           />
           <BIMDataButton
             v-if="!isLG"
-            data-test="btn-sort"
             class="space-board__header__btn"
             fill
             squared
@@ -37,7 +36,7 @@
             <BIMDataIcon name="alphabeticalSort" size="s" />
           </BIMDataButton>
           <BIMDataButton
-            data-test="btn-users"
+            data-test-id="btn-users"
             v-if="space.isAdmin"
             class="space-board__header__btn"
             fill
@@ -70,14 +69,8 @@
         :style="{ justifyContent: isMD ? 'center' : '' }"
       >
         <transition-group name="grid">
-          <ProjectCreationCard
-            data-test="creation-card"
-            v-if="space.isAdmin"
-            :key="-1"
-            :space="space"
-          />
+          <ProjectCreationCard v-if="space.isAdmin" :key="-1" :space="space" />
           <ProjectCard
-            data-test="project-card"
             v-for="project in projects"
             :key="project.id"
             :project="project"
@@ -89,24 +82,24 @@
 </template>
 
 <script>
-import { useAppSidePanel } from "@/components/specific/app/app-side-panel/app-side-panel.js";
-import { useListFilter } from "@/composables/list-filter.js";
-import { useListSort } from "@/composables/list-sort.js";
-import { useStandardBreakpoints } from "@/composables/responsive.js";
-import { IS_SUBSCRIPTION_ENABLED } from "@/config/subscription.js";
-import { useProjects } from "@/state/projects.js";
-import { useSpaces } from "@/state/spaces.js";
+import { useAppSidePanel } from "../../components/specific/app/app-side-panel/app-side-panel.js";
+import { useListFilter } from "../../composables/list-filter.js";
+import { useListSort } from "../../composables/list-sort.js";
+import { useStandardBreakpoints } from "../../composables/responsive.js";
+import { IS_SUBSCRIPTION_ENABLED } from "../../config/subscription.js";
+import { useProjects } from "../../state/projects.js";
+import { useSpaces } from "../../state/spaces.js";
 // Components
-import AppLoading from "@/components/specific/app/app-loading/AppLoading.vue";
-import GoBackButton from "@/components/specific/app/go-back-button/GoBackButton.vue";
-import ViewHeader from "@/components/specific/app/view-header/ViewHeader.vue";
-import AppBreadcrumb from "@/components/specific/app/app-breadcrumb/AppBreadcrumb.vue";
-import AppSidePanel from "@/components/specific/app/app-side-panel/AppSidePanel.vue";
-import ProjectCard from "@/components/specific/projects/project-card/ProjectCard.vue";
-import ProjectCreationCard from "@/components/specific/projects/project-creation-card/ProjectCreationCard.vue";
-import SpaceSizeInfo from "@/components/specific/subscriptions/space-size-info/SpaceSizeInfo.vue";
-import SubscriptionStatusBanner from "@/components/specific/subscriptions/subscription-status-banner/SubscriptionStatusBanner.vue";
-import SpaceUsersManager from "@/components/specific/users/space-users-manager/SpaceUsersManager.vue";
+import AppLoading from "../../components/specific/app/app-loading/AppLoading.vue";
+import GoBackButton from "../../components/specific/app/go-back-button/GoBackButton.vue";
+import ViewHeader from "../../components/specific/app/view-header/ViewHeader.vue";
+import AppBreadcrumb from "../../components/specific/app/app-breadcrumb/AppBreadcrumb.vue";
+import AppSidePanel from "../../components/specific/app/app-side-panel/AppSidePanel.vue";
+import ProjectCard from "../../components/specific/projects/project-card/ProjectCard.vue";
+import ProjectCreationCard from "../../components/specific/projects/project-creation-card/ProjectCreationCard.vue";
+import SpaceSizeInfo from "../../components/specific/subscriptions/space-size-info/SpaceSizeInfo.vue";
+import SubscriptionStatusBanner from "../../components/specific/subscriptions/subscription-status-banner/SubscriptionStatusBanner.vue";
+import SpaceUsersManager from "../../components/specific/users/space-users-manager/SpaceUsersManager.vue";
 
 export default {
   components: {
