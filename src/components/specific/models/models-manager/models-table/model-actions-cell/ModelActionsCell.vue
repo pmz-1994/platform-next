@@ -48,6 +48,7 @@
     <template v-if="model.document">
       <BIMDataButton
         class="model-actions-cell__btn"
+        data-test-id="btn-download-model"
         ripple
         rounded
         icon
@@ -58,8 +59,9 @@
     </template>
 
     <BIMDataButton
-      :disabled="!project.isAdmin && model.document?.user_permission < 100"
       class="model-actions-cell__btn"
+      data-test-id="btn-toggle-menu"
+      :disabled="!project.isAdmin && model.document?.user_permission < 100"
       ripple
       rounded
       icon
@@ -73,6 +75,7 @@
         <template v-if="model.document">
           <BIMDataButton
             class="model-actions-cell__menu__btn"
+            data-test-id="btn-update-model"
             ghost
             squared
             @click="onClick('update')"
@@ -82,6 +85,7 @@
         </template>
         <BIMDataButton
           class="model-actions-cell__menu__btn"
+          data-test-id="btn-archive-model"
           ghost
           squared
           @click="onClick(model.archived ? 'unarchive' : 'archive')"
@@ -93,8 +97,19 @@
             {{ $t("ModelActionsCell.archiveButtonText") }}
           </template>
         </BIMDataButton>
+        <template v-if="model.type === MODEL_TYPE.META_BUILDING">
+          <BIMDataButton
+            class="model-actions-cell__menu__btn"
+            ghost
+            squared
+            @click="onClick('edit-metaBuilding')"
+          >
+            {{ $t("ModelActionsCell.editButtontext") }}
+          </BIMDataButton>
+        </template>
         <BIMDataButton
           class="model-actions-cell__menu__btn"
+          data-test-id="btn-delete-model"
           color="high"
           ghost
           squared
@@ -109,9 +124,9 @@
 
 <script>
 import { computed } from "vue";
-import { useToggle } from "@/composables/toggle.js";
-import { MODEL_STATUS, MODEL_TYPE } from "@/config/models.js";
-import { WINDOWS } from "@/config/viewer.js";
+import { useToggle } from "../../../../../../composables/toggle.js";
+import { MODEL_STATUS, MODEL_TYPE } from "../../../../../../config/models.js";
+import { WINDOWS } from "../../../../../../config/viewer.js";
 // Components
 import ViewerButton from "./ViewerButton.vue";
 
@@ -129,7 +144,7 @@ export default {
       required: true
     }
   },
-  emits: ["archive", "delete", "download", "update"],
+  emits: ["archive", "delete", "download", "update", "edit-metaBuilding"],
   setup(props, { emit }) {
     const {
       isOpen: showMenu,

@@ -1,5 +1,5 @@
 <template>
-  <div class="subscription-modal" v-click-away="closeModal">
+  <div class="subscription-modal" v-click-away="modalCloser">
     <div class="subscription-modal__header">
       <span>{{ $t("SubscriptionModal.title") }}</span>
       <span>{{ $t("SubscriptionModal.subtitle") }}</span>
@@ -75,26 +75,32 @@
 </template>
 
 <script>
-import routeNames from "@/router/route-names.js";
-import AppLink from "@/components/specific/app/app-link/AppLink.vue";
-import { useAppModal } from "@/components/specific/app/app-modal/app-modal.js";
-import { useSpaces } from "@/state/spaces.js";
+import { useAppModal } from "../../app/app-modal/app-modal.js";
+import routeNames from "../../../../router/route-names.js";
+import { useSpaces } from "../../../../state/spaces.js";
+// Components
+import AppLink from "../../app/app-link/AppLink.vue";
 
 export default {
   components: {
     AppLink
   },
-  setup() {
-    const { showModal, closeModal } = useAppModal();
+  emits: ["switch-sub-modal"],
+  setup(_, { emit }) {
+    const { closeModal } = useAppModal();
     const { currentSpace } = useSpaces();
+
+    const modalCloser = () => {
+      closeModal();
+      emit("switch-sub-modal", false);
+    };
 
     return {
       // references
-      showModal,
       routeNames,
       currentSpace,
       // methods
-      closeModal
+      modalCloser
     };
   }
 };

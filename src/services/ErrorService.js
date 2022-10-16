@@ -1,5 +1,5 @@
-import i18n from "@/i18n/index.js";
-import { useAppNotification } from "@/components/specific/app/app-notification/app-notification.js";
+import { useAppNotification } from "../components/specific/app/app-notification/app-notification.js";
+import i18n from "../i18n/index.js";
 
 const ERRORS = Object.freeze({
   ORGANIZATIONS_FETCH_ERROR: "organizationsFetchError",
@@ -19,6 +19,8 @@ const ERRORS = Object.freeze({
   PROJECT_UPDATE_ERROR: "projectUpdateError",
   PROJECT_DELETE_ERROR: "projectDeleteError",
   PROJECT_FETCH_FILE_ERROR: "projectFetchFileError",
+  PROJECT_FOLDER_TREE_FETCH_ERROR: "projectFolderTreeFetchError",
+  DOCUMENT_CREATE_ERROR: "documentCreateError",
   INVITATIONS_FETCH_ERROR: "invitationsFetchError",
   INVITATION_SEND_ERROR: "invitationSendError",
   INVITATION_RESEND_ERROR: "invitationResendError",
@@ -42,6 +44,7 @@ const ERRORS = Object.freeze({
   FILE_VERSIONS_FETCH_ERROR: "fileVersionsFetchError",
   FILE_VERSIONS_MAKE_HEAD_ERROR: "fileVersionsMakeHeadError",
   FILE_VERSIONS_DELETE_ERROR: "fileVersionDelete",
+  FILE_STRUCTURE_CREATE_ERROR: "fileStructureCreateError",
   FOLDER_CREATE_ERROR: "folderCreateError",
   FILE_FETCH_ERROR: "fileFetchError",
   DOCUMENT_UPLOAD_ERROR: "documentUploadError",
