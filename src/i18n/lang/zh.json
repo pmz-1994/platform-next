@@ -49,17 +49,17 @@
   "ProjectBcf": {
     "importButtonText": "导入",
     "exportButtonText": "导出",
-    "createBcfButtonText": "Create a BCF",
+    "createBcfButtonText": "创建 BCF",
     "createBcfTitle": "上报问题",
     "showStatisticsTooltip": "展示数据",
     "hideStatisticsTooltip": "隐藏数据",
-    "searchInputPlaceholder": "Search by index #, name, creator or tag",
-    "ascendingIndexTooltip": "ascending index",
-    "descendingIndexTooltip": "descending index",
+    "searchInputPlaceholder": "通过索引、名称、创建人和标签搜索",
+    "ascendingIndexTooltip": "按索引升序排序",
+    "descendingIndexTooltip": "按索引降序排序",
     "alphabeticalAscendingOrderTooltip": "按字母顺序排序",
     "alphabeticalDescendingOrderTooltip": "按字母反序排序",
-    "ascendingDateTooltip": "ascending date",
-    "descendingDateTooltip": "descending date",
+    "ascendingDateTooltip": "按升序排列日期",
+    "descendingDateTooltip": "按降序排列日期",
     "viewGridTooltip": "网格视图",
     "viewListTooltip": "列表视图"
   },
@@ -67,7 +67,7 @@
       "openFileUploadButtonText": "添加模型",
       "closeFileUploadButtonText": "关闭",
       "forbiddenUploadNotification": {
-          "title": "Upload error",
+          "title": "上传失败",
           "message": "Please select a model file: {extensions}"
       }
   },
@@ -106,44 +106,44 @@
     "deleteButton": "删除"
   },
   "BcfFilters": {
-    "filtersButton": "Filters",
-    "filtersTitle": "Filters",
-    "priorityLabel": "Priority",
-    "statusLabel": "Status",
-    "startDatePlaceholder": "Start date",
+    "filtersButton": "筛选",
+    "filtersTitle": "筛选",
+    "priorityLabel": "优先级",
+    "statusLabel": "状态",
+    "startDatePlaceholder": "开始日期",
     "startDateExample": "(Ex: 28/04/2022)",
-    "endDatePlaceholder": "End date",
+    "endDatePlaceholder": "结束日期",
     "endDateExample": "(Ex: 28/05/2022)",
-    "assignedToLabel": "Assigned to",
-    "creatorsLabel": "Created by",
-    "tagsLabel": "Tags",
-    "resetButton": "Reset",
-    "searchButton": "Search",
-    "noPriority": "No priority",
-    "undefinedStatus": "Undefined",
-    "undefinedUser": "Undefined",
-    "undefinedCreator": "Undefined"
+    "assignedToLabel": "指派给",
+    "creatorsLabel": "创建人",
+    "tagsLabel": "标签",
+    "resetButton": "重置",
+    "searchButton": "搜索",
+    "noPriority": "没有优先级",
+    "undefinedStatus": "未指定",
+    "undefinedUser": "未指定",
+    "undefinedCreator": "未指定"
   },
   "BcfSettings": {
     "goBackButton": "返回",
     "title": "BCF 设置",
-    "piorityTitle": "Priority",
-    "labelTitle": "Labels",
-    "statusTitle": "Status",
-    "typeTitle": "Types",
-    "stageTitle": "Stages",
-    "validateButton": "Validate BCF settings"
+    "piorityTitle": "优先级",
+    "labelTitle": "标签",
+    "statusTitle": "状态",
+    "typeTitle": "类型",
+    "stageTitle": "等级",
+    "validateButton": "验证 BCF 设置"
   },
   "SettingCard": {
-    "addButton": "add an element",
+    "addButton": "添加组件",
     "cancelButton": "取消",
-    "validateButton": "Validate",
+    "validateButton": "验证",
     "title": {
-      "Priority": "Priorities",
-      "Label": "Labels",
-      "Status": "Status",
-      "Type": "Types",
-      "Stage": "Stages"
+      "Priority": "优先级",
+      "Label": "标签",
+      "Status": "状态",
+      "Type": "类型",
+      "Stage": "等级"
     },
     "input": {
       "Priority": "Add a new priority",
@@ -161,61 +161,61 @@
     }
   },
   "Extension": {
-    "deleteExtensionText": "Remove this setting",
+    "deleteExtensionText": "删除设置",
     "deleteButton": "删除"
   },
   "BcfTopicCreationCard": {
-    "text": "Create a new BCF topic",
-    "createBcfSideTitle": "Report a problem"
+    "text": "创建一个新的 BCF 话题",
+    "createBcfSideTitle": "上报问题"
   },
   "BcfTopicGridItem": {
-    "priority": "Priority: ",
-    "assignedTo": "Assigned to: ",
-    "noPriority": "Any",
-    "notSpecified": "Not specified",
-    "elements": "Elements",
-    "noElements": "0 Element",
-    "see": "See"
+    "priority": "优先级：",
+    "assignedTo": "指派给：",
+    "noPriority": "任意",
+    "notSpecified": "未说明",
+    "elements": "组件",
+    "noElements": "0 组件",
+    "see": "查看"
   },
   "BcfTopicsList": {
     "headers": {
       "index": "#",
-      "priority": "Priority",
-      "status": "Status",
-      "title": "Title",
-      "creator": "Created by",
-      "date": "Date",
-      "actions": "Actions"
+      "priority": "优先级",
+      "status": "状态",
+      "title": "标题",
+      "creator": "创建人",
+      "date": "日期",
+      "actions": "操作"
     }
   },
   "BcfActionsCell": {
-    "seeButton": "See"
+    "seeButton": "查看"
   },
   "ModalDeleteTopic": {
-    "deleteText": "You are about to delete {name}",
-    "deleteBcfButton": "Delete this BCF",
-    "keepBcfButton": "Keep this BCF"
+    "deleteText": "你即将删除 {name}",
+    "deleteBcfButton": "删除 BCF",
+    "keepBcfButton": "保留 BCF"
   },
   "OpenTopicIssue": {
-    "elements": "Elements",
-    "noElements": "0 Element",
-    "type": "Type:",
-    "noTypeSpecified": "No type specified",
+    "elements": "组件",
+    "noElements": "0 组件",
+    "type": "类型：",
+    "noTypeSpecified": "没有指定类型",
     "description": "描述：",
     "noDescriptionProvided": "没有提供描述",
-    "assignedTo": "Assigned to:",
-    "notAssigned": "Not assigned",
-    "dueDate": "Due date:",
-    "noDueDate": "No due date",
-    "informations": "Informations",
-    "status": "Status:",
-    "noStatusSpecified": "No status specified",
-    "stage": "Stage:",
-    "noStageProvided": "No stage provided",
-    "priority": "Priority:",
-    "priorityNotDefined": "Not defined",
-    "tags": "Tags:",
-    "noTags": "No tags"
+    "assignedTo": "指派给：",
+    "notAssigned": "没有指派",
+    "dueDate": "到期时间：",
+    "noDueDate": "没有指定到期时间",
+    "informations": "信息",
+    "status": "状态：",
+    "noStatusSpecified": "没有指定状态",
+    "stage": "等级：",
+    "noStageProvided": "没有提供等级",
+    "priority": "优先级：",
+    "priorityNotDefined": "没有指定",
+    "tags": "标签：",
+    "noTags": "没有标签"
   },
   "BcfTopicsMetrics": {
     "emptyText": "Add BCF Topics to start to have some stats here.",
@@ -231,35 +231,35 @@
   },
   "CreateBcfTopic": {
     "dragDropImageText": "请选择一个文件",
-    "addPictureButton": "Add a picture",
-    "titlePlaceholder": "Title *",
-    "titleErrorMessage": "Missing title",
-    "typeLabel": "Type",
-    "priorityLabel": "Priority",
-    "statusLabel": "Status",
-    "stageLabel": "Stage",
-    "assignedToLabel": "Assigned to",
-    "dueDateLabel": "Due date",
-    "dateErrorMessage": "Date format or incorrect date",
+    "addPictureButton": "添加图片",
+    "titlePlaceholder": "标题 *",
+    "titleErrorMessage": "缺少标题",
+    "typeLabel": "类型",
+    "priorityLabel": "优先级",
+    "statusLabel": "状态",
+    "stageLabel": "等级",
+    "assignedToLabel": "指派给",
+    "dueDateLabel": "到期时间",
+    "dateErrorMessage": "错误的日期或格式",
     "dateExample": "(Ex: 28/04/2022)",
-    "descriptionLabel": "Description",
-    "tagsLabel": "Tags",
-    "validateButton": "Validate"
+    "descriptionLabel": "描述",
+    "tagsLabel": "标签",
+    "validateButton": "验证"
   },
   "EditBcfTopic": {
     "goBackButton": "返回",
-    "dragDropImageText": "Please select a file",
-    "addPictureButton": "Add a picture",
-    "titlePlaceholder": "Title*",
-    "titleErrorMessage": "Missing title",
-    "typeLabel": "Type",
-    "priorityLabel": "Priority",
-    "statusLabel": "Status",
-    "stageLabel": "Stage",
-    "assignedToLabel": "Assigned to",
-    "descriptionLabel": "Description",
-    "tagsPlaceholder": "Tags",
-    "editButton": "Modify this BCF"
+    "dragDropImageText": "请选择一个文件",
+    "addPictureButton": "添加图片",
+    "titlePlaceholder": "标题*",
+    "titleErrorMessage": "缺少标题",
+    "typeLabel": "类型",
+    "priorityLabel": "优先级",
+    "statusLabel": "状态",
+    "stageLabel": "等级",
+    "assignedToLabel": "指派给",
+    "descriptionLabel": "描述",
+    "tagsPlaceholder": "标签",
+    "editButton": "修改 BCF"
   },
   "EditBcfTopicModal": {
     "modalText": "You are about to quit editing issue {name} but there are unsaved changes.",

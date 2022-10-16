@@ -93,6 +93,10 @@ export default {
     onMounted(async () => {
       loading.value = true;
       const bimdataViewer = makeBIMDataViewer({
+        ui: {
+          version: true,
+          bimdataLogo: false
+        },
         api: {
           apiUrl,
           accessToken: accessToken.value,
