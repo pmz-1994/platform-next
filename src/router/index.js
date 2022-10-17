@@ -27,7 +27,7 @@ import OidcCallbackError from "../views/oidc-callback-error/OidcCallbackError.vu
 import PageNotFound from "../views/page-not-found/PageNotFound.vue";
 
 // Lazy loaded view components
-const Dashboard = () => import("../views/dashboard/Dashboard.vue");
+const Dashboard = () => import("../views/dash-board/Dashboard.vue");
 const GroupBoard = () => import("../views/group-board/GroupBoard.vue");
 const ModelViewer = () => import("../views/model-viewer/ModelViewer.vue");
 const ProjectBoard = () => import("../views/project-board/ProjectBoard.vue");
@@ -61,7 +61,7 @@ const routes = [
     component: AppLayout,
     meta: {
       // Protect this route and all its children with authentication
-      requiresAuth: false
+      requiresAuth: true
     },
     children: [
       {

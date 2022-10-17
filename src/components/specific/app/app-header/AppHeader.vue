@@ -1,7 +1,7 @@
 <template>
   <div class="app-header">
     <AppLink :to="{ name: routeNames.dashboard }">
-      <img src="/static/logo-nc.png" class="app-header__logo" />
+      <img src="/static/logo-tucheng.svg" class="app-header__logo" />
     </AppLink>
     <app-slot name="app-header-action" />
     <AppHeaderMenu class="app-header__menu" />
