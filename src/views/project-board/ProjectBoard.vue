@@ -25,7 +25,7 @@
               <span v-else>
                 {{ $t(`ProjectBoard.tabs.${tab.id}`) }}
               </span>
-              <span v-if="tab.beta" class="beta-badge">BETA</span>
+              <span v-if="tab.beta" class="beta-badge">&nbsp;协同</span>
             </span>
           </template>
         </BIMDataTabs>
